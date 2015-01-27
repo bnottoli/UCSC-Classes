@@ -1,0 +1,21 @@
+To Compile: javac RBF.java
+To Run: java RBF
+
+%s can only be used with format
+
+Navigating Paths
+cd:change directory 
+
+pwd: gives absolute path to current directory 
+
+~: alias to home directory 
+
+/:absolute route
+
+./ : current folder; same route as pwd
+
+../ : Move out one directory (backwards)
+
+cat : Gives you content listing (takes everything in the file and prints it out;always have to give it a path)
+
+grep : search tool 

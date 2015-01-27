@@ -1,0 +1,111 @@
+Chapter 2 Notes
+
+Everything between /* and a */ is a comment
+// is a single line comment
+
+Class is a named collection of data and instructions
+{} Begins and ends the definition of a class 
+
+Method is a named group of instructions within a class 
+()Indicate the start of a method
+
+Lexical Elements
+Five types of tokens:
+1) keywords
+2) identifiers 
+3) literals
+4) operators
+5) punctuation 
+
+White space: If you can legally put one space, you can put as many spaces, tabs, and newlines as you want.
+
+Keywords (reserved words)
+- Have a predefined and special purpose that can't be used for anything but that purpose. 
+- 47 Keywords
+- Must be separated from other keywords and identifiers by white space, a comment, or some other punctuation symbol. 
+
+Identifiers 
+- used to specify different elements of the java program 
+- keywords cannot be identifiers
+- true, false, and null cannot be used as identifiers 
+- contain 0-9, but cannot start with a number ex)1floor is not acceptable 
+- Java includes upper/lower case letters, $, and _
+
+Literals 
+int- numbers without fractional parts 
+double - double precision numbers with fractional parts (ex. 1.23)
+String - arbitrary string of characters (ex. "oh j")
+boolean- logical values true or false
+char- single characters 
+
+Data Types
+- 8 primitive types
+- Numeric types byte, short, int, long, float, double for storing numeric values
+- Character type char for storing a single alphabetic character, digit , or single
+- Boolean for true or false 
+
+A String Concatenation
+Concat(): creates a new string containing the first string followed by the second string
+ex)
+class HelloWorld2
+ {
+  public static void main (String[] args) 
+  {
+    String word1;
+    String word2, sentence;
+    word1= "Hello, ";
+    word2= "world!";
+    sentence = word1.concat(word2);
+    System.out.println(sentence);
+  }
+}
+
+Scanner methods 
+-nextInt(): integers expected
+-nextDouble(): doubles expected 
+-next(): arbitrary strings 
+-nextBoolean: Logical values 
+-Scanner(): attaches source of input (ex. new Scanner(System.in)
+
+print(),println(), & printf()
+-print() & println() methods can print all primitive types
+\n represents a new line within the same string 
+  ex) System.out.println("one\nword\nper\nline. ");
+      one
+      word
+      per
+      line.
+
+Formatting Output with printf()
+ex) printf("%s", "abc"; is the same as printf(%c%c%c, 'a','b','c');
+-single quotes are use to designate character constants 
+Conversion Character
+-c: as a character 
+-d: as a decimal integer
+-e: as a floating- point number in scientific notation 
+-f: as a floating- point number 
+-g: in the e-format or f-format whichever is shorter
+-s: as a string 
+field is the place where an argument is printed and the number of characters is called its field width
+ ex) printf("Airfare is $%6.2f.\nParking is $%6.2f.\n" , 300.50, 16.50);
+      Airfare is $300.50
+      Parking is $ 16.50
+      signifies that two numbers should be printed in a field of six characters with two digits to the right of the decimal point.
+      
+Modulus is dignified by % meaning remainder from integer division
+  ex.(16 % 3 = 1, because 16/3 =5 with a remainder of 1)
+  
+Assignment Operators 
+variable = rightHandSide
+Multiple assignment (ex a = b = c = 0)
+Assignment Operators 
+      =, +=, -=, *=, 
+    ex) k=k+2 or k+=2
+    ex) j=j*(k+3) or j *= k+3
+
+The Increment and Decrement Operations 
+i++ is the same as i=i +1
+i-- is the same as i=i -1 
+
+The expression ++i(prefix) causes the stored value of i to be incremented first, with the expression then taking as its value the new stored value of i.
+The expression i++(postfix) has the current value of i then the expression causes the stored value of i to be incremented. 

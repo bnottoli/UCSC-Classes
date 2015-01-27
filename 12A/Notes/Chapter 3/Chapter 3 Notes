@@ -1,0 +1,124 @@
+Expression, Block, and Empty Statements 
+All statements used this far are either variable declaration statements or an expression statement
+-Variable declaration statements begin with a type such as int or String and end with a semicolon 
+    Declaration statements start with a type and are followed by one or more variables, separated by commas
+-Expression statements are formed by adding a semicolon to the end of an expression  
+    1) Assignment expression is any expression involving an assignment operator 
+    2) A method expression does not involve an assignment operator
+    ex) 
+      area = width *height;     //simple assignment statement 
+      System.out.println(...);  // method call expression
+      
+A block is a sequence of or or more statements enclosed by braces. 
+ - A block itself is a statement 
+ - Statements inside blocks can also be blocks (inner and outer blocks)
+ 
+Blocks are not terminated by semicolons but by a closing brace 
+- semicolons are part of the statement not something added to make the statement
+- semicolons turns an expression into a statement 
+
+Empty statement (null statement)
+- Semicolon all by itself and results in no action 
+
+
+
+Relational and Equality Operators 
+<: less than 
+>: greater than
+==: equal 
+<=: less than or equal to
+>=: greater than or equal to 
+!=: not equal 
+&&: and (The expression x && y is true if both x and t are true and false otherwise)
+||: or (The expression x || y is true if either x or y (or both) is true and false otherwise
+!: Not (The expression !x is true if x is false and false otherwise)
+
+
+
+The if Statement
+General form : 
+  if (BooleanExpr)
+    statement 
+   If the BooleanExpr is true, then the statement is executed; otherwise the statement is skipped 
+   ex) 
+     if (temperature < 32) 
+     {
+       System.out.println("Warning Warning Warning!");
+       System.out.println("Warning: Below Freezing!");
+       System.out.println("Warning Warning Warning!");
+     }
+   
+   
+   
+The if-else Statement
+General form: 
+  if (BooleanExpr) Statement1 else Statement2
+  If the expression BooleanExpr is true, then statement1 is executed and statement2 is skipped
+  if the BooleanExpr is false then statement1 is skipped and statement2 is executed 
+  ex) if (temperature < 32) 
+  {
+    System.out.println( "Warning Warning Warning!");
+    System.out.println(32 - tempertature + "degrees below freezing!");
+    System.out.println("Warning Warning Warning");
+  }
+   else
+   {
+    System.out.println("It's" + temperature + "degrees fahrenheit.");
+   }
+   
+   
+Nested if-else Statements
+   
+   ex) if (temperature < 32) 
+      {
+        System.out.println("Warning Warning Warning!");
+        if (temperature < 0) 
+          System.out.println((-temperature) + "degrees below Zero! ");
+        else
+          System.out.println(32 - temperature + "(F) below Freezing!");
+        System.out.println("Warning Warning Warning!");
+      }
+      else 
+      {
+        System.out.println("It is " + temperature + "degrees fahrenheit.");
+      }
+
+
+If else-if else-if else
+  ex) if (ageOfPerson < 18)
+      System.out.println("child fare");
+    else 
+    {
+      if (ageOfPerson < 65) 
+      System.out.println("adult fare");
+      else
+      System.out.println("senior fare");
+    }
+    
+    
+The While Statement
+General form: While (BooleanExpr)
+                Statement
+             * The statement will not be executed if the BooleanExpr is false. 
+A sentinel is a proper way to terminate the loop 
+NaN: "not a number" results from 0/0
+
+The Do Statement
+General form: do
+                Statement
+                while(BooleanExpr)
+            * The statement is executed at least once and execution stops when the BooleanExpr is false
+            
+            
+The For Statement
+General form: for(ForInit ; BooleanExpr ; UpdateExpr)
+                Statement
+                
+                
+The break and continue Statement
+-The break statement causes an exit from the innermost enclosing.  Also causes the switch statement to terminate. 
+
+The switch Statement 
+- Used in place of a long chain of if-else-if-else-if-else statements when the conditions being tested evaluates to an integer numeric type
+
+
